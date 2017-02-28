@@ -14,18 +14,14 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="cv.js"></script>
 		<script type="text/javascript">
-
-			function valider(){
-			  if(document.formSaisie.nom.value != "") {
-			    return true;
-			  }
-			  else {
-			    alert("Saisissez votre nom et votre prénom");
-			    return false;
-			  }
+                        function verification(){
+				if(getElementById('id') != '')
+				{
+				document.formulaire.submit();
+				}
 			}
-		</script>			
-		
+		</script>		
+
 		<script>
 		function CalculAge(value) {
 			var td=new Date();
@@ -174,7 +170,7 @@
 
 
 
-			<h3>Divers<button style="font-size: 50%;" onclick="afficher('#Divers');">cacher</button></h3>
+			
 			<h3>Divers<button style="font-size: 50%;" onclick="afficher('#Divers');">cacher</button></h3>
 			<div id="Divers" class = "row">
 				<div class = "col-xs-3">Loisirs:</div><div class = "col-xs-9"> <span class="t-forma">documentaires, yoga, fitness.</span></div>
@@ -189,7 +185,7 @@
 						<div class="form-group">
 							<label for="nom" class="col-xs-3 control-label">Nom</label>
 							<div class="col-xs-9">	
-								<input type="text" class="form-control" id="Nom" placeholder="Prénom & nom" value="">
+								<input type="text" class="form-control" name="nom" id="Nom" placeholder="Prénom & nom" value="">
 							</div>
 						</div>
 						
@@ -221,14 +217,18 @@
 						</div>
 				</form>
 		
-				<form action="url_page_suivante" onsubmit="return valider()" method="get" nom="formSaisie">
-				  <p>
-				    <label for="nom">Saisissez votre nom et prénom!</label>
-				    <input type="text" id="Nom" />
-
-				    <input type="submit" value="Ok" />
-				  </p>
+				  <form class="search" method="post" action="#" onsubmit="return false" name="formulaire">
+					<p>
+					<input class="form-control" type="text" name="nom" value="" id="Nom"/>
+					<input class="button" type="submit" name="Submit" value="Search" onclick="verification()"/>
+					</p>
+	 
+					<p>
+					<input class="form-control" type="text" name="email" value="" id="email"/>
+					<input class="button" type="submit" name="Submit" value="Search" onclick="verification()"/>
+					</p>
 				</form>
+
 
 	</body>
 </html>
