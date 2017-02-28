@@ -13,14 +13,25 @@
 		<link rel="stylesheet" type="text/css" href="cv.js">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="cv.js"></script>
-		<script language="javascript" type="text/javascript">
-			function verif(){
-				if(document.getElementById('searchquery').value == ''){
-				alert('bouh !');
-				return false;
-				}else return true;
-				}
+		<script type="text/javascript">
+
+			function valider(){
+			  // si la valeur du champ prenom est non vide
+			  if(document.formSaisie.prenom.value != "") {
+			    // les données sont ok, on peut envoyer le formulaire    
+			    return true;
+			  }
+			  else {
+			    // sinon on affiche un message
+			    alert("Saisissez votre nom et votre prénom");
+			    // et on indique de ne pas envoyer le formulaire
+			    return false;
+			  }
+			}
+
+
 		</script>
+        
 		
 					
 		
@@ -220,11 +231,15 @@
 						</div>
 				</form>
 		
-				<form id="search" method="post" action="recherche.php" onsubmit="verif()">
-					<input type="text" id="searchquery" name="searchquery"/>
-					<input type="button" />
+				<form action="url_page_suivante" onsubmit="return valider()"
+				  method="get" name="formSaisie">
+				  <p>
+				    <label for="prenom">Saisissez votre prénom :</label>
+				    <input type="text" name="prenom" id="prenom" />
+
+				    <input type="submit" value="Ok" />
+				  </p>
 				</form>
-					
 
 	</body>
 </html>
