@@ -16,24 +16,15 @@
 		<script type="text/javascript">
 
 			function valider(){
-			
 			  if(document.formSaisie.nom.value != "") {
-			   
 			    return true;
 			  }
 			  else {
-			   
 			    alert("Saisissez votre nom et votre prénom");
-			   
 			    return false;
 			  }
 			}
-
-
-		</script>
-        
-		
-					
+		</script>			
 		
 		<script>
 		function CalculAge(value) {
@@ -230,8 +221,7 @@
 						</div>
 				</form>
 		
-				<form action="url_page_suivante" onsubmit="return valider()"
-				  method="get" name="formSaisie">
+				<form action="url_page_suivante" onsubmit="return valider()" method="get" nom="formSaisie">
 				  <p>
 				    <label for="nom">Saisissez votre nom et prénom!</label>
 				    <input type="text" id="Nom" />
