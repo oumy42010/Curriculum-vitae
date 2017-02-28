@@ -13,6 +13,14 @@
 		<link rel="stylesheet" type="text/css" href="cv.js">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="cv.js"></script>
+		<script language="javascript" type="text/javascript">
+			function verif(){
+				if(document.getElementById('searchquery').value == ''){
+				alert('bouh !');
+				return false;
+				}else return true;
+				}
+		</script>
 		
 					
 		
@@ -210,6 +218,11 @@
 						<div class="button">
 							<button type="submit">Envoyer votre message</button>
 						</div>
+				</form>
+		
+				<form id="search" method="post" action="recherche.php" onsubmit="verif()">
+					<input type="text" id="searchquery" name="searchquery"/>
+					<input type="submit" />
 				</form>
 					
 
