@@ -8,7 +8,7 @@
 	function valider(){
 		console.log($("#email").val().includes("@"));
 		if(!$("#email").val().includes("@")){
-			window.alert("Adresse mail est incorrect, veuillez rettaper!");
+			window.alert("Adresse mail invalide, veuillez rettaper!");
 		}
 		
 		console.log($("#phone").val().length);
