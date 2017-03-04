@@ -130,7 +130,9 @@ textarea {
 }
 
 .button {
-    padding-left: 90px;
+     margin-left: 109px;
+    background: transparent;
+    font-size:14px;
 }
 
 .sub > li {
