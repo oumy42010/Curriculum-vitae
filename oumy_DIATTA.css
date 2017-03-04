@@ -1,16 +1,29 @@
 
 .container{
-	background-color: #ecf0f1;
+	background-color: #FFFFFF;
 	box-shadow: 1px 1px 12px #555;
 	font-family: Cambria;
 	
 }
 
 header{
-	background-color:#99A79A;
-	font-size: 16px;
 	
+	font-size: 16px;
 }	
+h1{
+	text-align: center;
+	font-size: 35px;
+}
+h3{
+	background-color: #085C66;
+	color: #FFFFFF;
+	font-size: 30px;
+
+}
+h4{
+	color: 	#000000;
+	font-size: 25px;
+}
 
 #menu-accordeon {
 padding:0;
@@ -55,33 +68,23 @@ transition: .8s all .3s;
 #menu-accordeon  li:hover ul{
 max-height:15em;
 }
-
 #menu-accordeon  li{
-background-color: #729EBF;
-background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
-background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+background-color: #085C66;
+background-image: -webkit-linear-gradient(top, #085C66 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #085C66 0%, #333A40 100%);
 }
-
-
-#menu-accordeon li:first-child:hover, #menu-accordeon li:first-child li:hover{
-background:#65537A;
+#menu-accordeon li:hover{
+background:#D9DADE;
 }
-#menu-accordeon li:nth-child(2):hover, #menu-accordeon2 li:nth-child(2) li:hover{
-background:#729EBF;
+#menu-accordeon li li:hover{
+background:#E4E6F2;
 }
-#menu-accordeon li:nth-child(3):hover, #menu-accordeon li:nth-child(3) li:hover{
-background:#F6AD1A;
-}
-#menu-accordeon li:last-child:hover, #menu-accordeon li:last-child li:hover{
-background:#CFFF6A;
-}
-
 #menu-accordeon a{
 text-decoration:none;
 display:block;
 padding:8px 32px;
 color:#fff;
-font-family:Cambria;
+font-family:arial;
 }
 #menu-accordeon ul a{
 padding:8px 0;
@@ -92,27 +95,6 @@ text-transform:inherit;
 }
 #menu-accordeon li:hover a, #menu-accordeon li li:hover a{
 color:#000;
-}
-
-
-h1{
-	text-align: center;
-}
-h1{
-	font-size: 35px;
-}
-
-h3{
-	background-color: #99A79A;
-	color: #FFFFFF;
-	font-size: 30px;
-
-}
-
-h4{
-	background-color: #ecf0f1;
-	color: 	#000000;
-	font-size: 25px;
 }
 	
 .t-forma{
@@ -126,16 +108,13 @@ h4{
 	font-size: 22px;
 }
 
-
 form {
     margin: right;
     width: 400px;
-   
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
 }
-
 
 }
 label {
@@ -151,30 +130,16 @@ input, textarea {
     border: 1px solid #999;
 }
 
-
-
-
 textarea {
     vertical-align: top;
-
     height: 5em;
     resize: vertical;
 }
 
 .button {
-     margin-left: 109px;
+    margin-left: 109px;
     background: transparent;
     font-size:14px;
-}
-
-.sub > li {
-    height: 0;
-    overflow: hidden;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    display: none
 }
 
 input:checked + .sub > li {
@@ -182,13 +147,10 @@ input:checked + .sub > li {
 }
 
 .sub > li {
-    transition: all 0.25s ease-in-out 
-}
-
-.sub > li {
     opacity: 0;
     height: 0;
     padding: 0;
+    overflow: hidden;
     transition: all 0.25s ease-in-out;
 }
 input:checked + .sub > li {
@@ -196,5 +158,4 @@ input:checked + .sub > li {
     height: 1.4em
     opacity: 1
 }
-
 
