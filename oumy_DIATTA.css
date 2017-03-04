@@ -134,12 +134,7 @@ textarea {
 }
 
 .button {
-    background-color: #4CAF50; 
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
+    padding-left: 90px;
 }
 
 .sub > li {
