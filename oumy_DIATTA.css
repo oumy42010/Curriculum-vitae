@@ -58,7 +58,7 @@ border-radius:0;
 #menu-accordeon  ul li:hover{
 border-radius:0;
 }
-#menu-accordeon  ul li:last-child{
+#menu-accordeon  ul li{
 border-radius:0 0 8px 8px;
 }
 #menu-accordeon  ul{
