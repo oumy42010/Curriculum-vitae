@@ -134,13 +134,13 @@ textarea {
 }
 
 .button {
-    line-height: 20px;
-    padding-bottom: 2px;
-    vertical-align: middle;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 13px;
-    text-transform: none;
-    border:1px solid transparent;
+    background-color: #4CAF50; 
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .sub > li {
