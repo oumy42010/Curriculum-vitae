@@ -28,8 +28,9 @@ h4{
 	font-size: 25px;
 }
 h5{
-	color: 	blue;
-	font-size: 20px;
+	color: 	#000000;
+	font-size: 23px;
+	margin-top: 35px;
 }
 a:visited 
 {
@@ -149,8 +150,18 @@ textarea {
 
 .button {
     margin-left: 109px;
-    background: transparent;
     font-size:14px;
+	color:black;
+	
+}
+.button:hover
+{
+	color:#085C66;
+	
+}
+.button:active
+{
+	color:green;
 }
 
 input:checked + .sub > li {
