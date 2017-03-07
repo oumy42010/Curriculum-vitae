@@ -170,3 +170,29 @@ input:checked + .sub > li {
     opacity: 1
 }
 
+.btn_cacher {
+	float: right;
+	color:black;
+	border-style:ridge;
+	border-width:1px;
+	border-color:black;
+	margin-left:1px;
+	margin-right:3px;
+	margin-top:3px;
+	margin-bottom:1px;
+}
+.btn_cacher:hover
+{
+	color:#085C66;
+	border-style:outset;
+}
+
+.btn_cacher:active
+{
+	color:green;
+	padding-left:4px;
+	padding-right:2px;
+	padding-top:4px;
+	padding-bottom:2px;
+	border-style:inset;
+}
