@@ -39,7 +39,6 @@ a:visited
 
 #menu-accordeon {
 padding:0;
-margin:0;
 width: 100px;
 list-style:none;
 text-align:center;
@@ -192,7 +191,7 @@ input:checked + .sub > li {
 	margin-right:3px;
 	margin-top:3px;
 	margin-bottom:1px;
-	border-radius: 3px 2px 3px 2px;
+	border-radius: 4px 3px 4px 3px;
 }
 .btn_cacher:hover
 {
@@ -212,10 +211,10 @@ input:checked + .sub > li {
 
 #bas_page
 {
-    	width: 40%;
-	margin-top: 50;
+    	
+	margin-top: 25;
     	margin-bottom: 25;
-	background-color: grey; 
+       color: #FFFFFF;
 	text-align: center;
 }
 
