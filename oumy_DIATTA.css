@@ -43,6 +43,7 @@ margin:0;
 width: 100px;
 list-style:none;
 text-align:center;
+	margin-top^: 15px;
 }
 #menu-accordeon ul{
 padding:0;
@@ -191,6 +192,7 @@ input:checked + .sub > li {
 	margin-right:3px;
 	margin-top:3px;
 	margin-bottom:1px;
+	border-radius: 3px 2px 3px 2px;
 }
 .btn_cacher:hover
 {
